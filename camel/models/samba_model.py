@@ -194,7 +194,6 @@ class SambaModel(BaseModelBackend):
             model_parameters=self.model_config_dict,
         )
 
-
         if self.model_config_dict.get("stream") is True:
             return await self._arun_streaming(messages, tools)
         else:

@@ -324,7 +324,6 @@ class RekaModel(BaseModelBackend):
             model_parameters=self.model_config_dict,
         )
 
-
         reka_messages = self._convert_openai_to_reka_messages(messages)
 
         response = self._call_client(

@@ -294,7 +294,6 @@ class MoonshotModel(InterleavedThinkingMixin, OpenAICompatibleModel):
                 `AsyncStream[ChatCompletionChunk]` in the stream mode.
         """
 
-
         request_config = self._prepare_request(
             messages, response_format, tools
         )

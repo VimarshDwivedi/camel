@@ -853,7 +853,6 @@ class FunctionGemmaModel(BaseModelBackend):
             model_parameters=self.model_config_dict,
         )
 
-
         prompt = self._format_messages(messages, tools)
         logger.debug(f"FunctionGemma prompt:\n{prompt}")
 
@@ -896,7 +895,6 @@ class FunctionGemmaModel(BaseModelBackend):
             model=str(self.model_type),
             model_parameters=self.model_config_dict,
         )
-
 
         prompt = self._format_messages(messages, tools)
         logger.debug(f"FunctionGemma prompt:\n{prompt}")

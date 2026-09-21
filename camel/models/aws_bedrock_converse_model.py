@@ -48,13 +48,7 @@ from camel.utils import (
     api_keys_required,
 )
 
-if os.environ.get("LANGFUSE_ENABLED", "False").lower() == "true":
-    try:
-        from langfuse.decorators import observe
-    except ImportError:
-        from camel.utils import observe
-else:
-    from camel.utils import observe
+from camel.utils import observe
 
 
 class AWSBedrockConverseModel(BaseModelBackend):
